@@ -18,6 +18,7 @@ document.getElementById('yellow').addEventListener('click', () => changeBg('yell
 document.getElementById('green').addEventListener('click', () => changeBg('green'));
 document.getElementById('blue').addEventListener('click', () => changeBg('blue'));
 
+
 function randomColor() {
   // Generate a random number between 0 and 255 for the red channel
   const yellow = Math.round(Math.random() * 255)
@@ -30,5 +31,6 @@ function randomColor() {
   // Apply this random color to the page background
   bodyType.style.backgroundColor = colors;
 }
+document.addEventListener('click', () => randomColor())
 //call the function
 console.log(randomColor());
