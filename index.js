@@ -17,6 +17,7 @@ changeBg('black') */
 document.getElementById('yellow').addEventListener('click', () => changeBg('yellow'));
 document.getElementById('green').addEventListener('click', () => changeBg('green'));
 document.getElementById('blue').addEventListener('click', () => changeBg('blue'));
+document.getElementById('random').addEventListener('click', () => randomColor())
 
 
 function randomColor() {
@@ -31,6 +32,6 @@ function randomColor() {
   // Apply this random color to the page background
   bodyType.style.backgroundColor = colors;
 }
-document.addEventListener('click', () => randomColor())
+
 //call the function
 console.log(randomColor());
