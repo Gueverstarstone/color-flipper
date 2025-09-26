@@ -7,6 +7,8 @@ const bodyType = document.getElementsByTagName('body')[0];
 function changeBg(name) {
   // Use the parameter to set the background color of the <body>
   bodyType.style.backgroundColor = name;
+  document.getElementById('color-code').textContent = name
+  
 }
 
 /* Call the function with 'black' → background turns black
@@ -17,7 +19,7 @@ changeBg('black') */
 document.getElementById('red').addEventListener('click', () => changeBg('red'));
 document.getElementById('green').addEventListener('click', () => changeBg('green'));
 document.getElementById('blue').addEventListener('click', () => changeBg('blue'));
-document.getElementById('random').addEventListener('click', () => randomColor())
+document.getElementById('random').addEventListener('click', () => randomColor());
 
 
 function randomColor() {
